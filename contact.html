@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact — EA Michigan</title>
+<meta name="description" content="Get in touch with EA Michigan, join the mailing list, or apply to the Intro Fellowship.">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="wrap nav">
+    <a href="index.html" class="brand"><span class="mark"></span>EA MICHIGAN</a>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" id="navToggle"><span></span></button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="events.html">Events</a></li>
+      <li><a href="contact.html" aria-current="page">Contact</a></li>
+    </ul>
+    <a href="contact.html" class="btn btn-outline nav-cta">Get involved</a>
+  </nav>
+</header>
+
+<section class="page-hero">
+  <div class="wrap">
+    <span class="eyebrow">Get in touch</span>
+    <h1>Say hello.</h1>
+    <p>Questions about the fellowship, ideas for a speaker, or just curious — all of it lands in the same inbox, and a real person reads it.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="contact-grid">
+      <div>
+        <span class="eyebrow">Details</span>
+        <h2 style="margin-top:14px;">Find us</h2>
+        <div style="margin-top:26px;">
+          <div class="info-row">
+            <span class="label">Email</span>
+            <span class="value"><a href="mailto:hello@michiganea.org">hello@michiganea.org</a></span>
+          </div>
+          <div class="info-row">
+            <span class="label">Meetings</span>
+            <span class="value">Wednesdays, 7:00 PM<br>Mason Hall, Room 1210</span>
+          </div>
+          <div class="info-row">
+            <span class="label">Mailing list</span>
+            <span class="value"><a href="#">Join the weekly digest →</a></span>
+          </div>
+          <div class="info-row">
+            <span class="label">Instagram</span>
+            <span class="value"><a href="#">@michiganea</a></span>
+          </div>
+          <div class="info-row">
+            <span class="label">Discord</span>
+            <span class="value"><a href="#">Join the server →</a></span>
+          </div>
+          <div class="info-row">
+            <span class="label">Location</span>
+            <span class="value">University of Michigan<br>Ann Arbor, MI</span>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <span class="eyebrow">Message us</span>
+        <h2 style="margin-top:14px;">Send a note</h2>
+        <form style="margin-top:26px;" onsubmit="event.preventDefault(); this.querySelector('.form-note').textContent='Thanks — we\'ll get back to you within a few days.';">
+          <div class="field">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required placeholder="What's on your mind?"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Send message</button>
+          <p class="form-note">We read every message and reply within a few days.</p>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <h4>EA Michigan</h4>
+        <p style="max-width:280px;font-size:0.94rem;color:rgba(250,247,239,0.7);">A student-run community at the University of Michigan applying evidence and reason to the question of how to do the most good.</p>
+      </div>
+      <div>
+        <h4>Site</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Elsewhere</h4>
+        <ul>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">Discord</a></li>
+          <li><a href="mailto:hello@michiganea.org">hello@michiganea.org</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 EA Michigan · Ann Arbor, MI</span>
+      <span>Not officially affiliated with the University of Michigan.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
