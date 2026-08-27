@@ -40,53 +40,39 @@
         <div style="margin-top:26px;">
           <div class="info-row">
             <span class="label">Email</span>
-            <span class="value"><a href="mailto:hello@michiganea.org">hello@michiganea.org</a></span>
+            <span class="value"><a href="mailto:effectivealtruism@umich.edu">effectivealtruism@umich.edu</a></span>
           </div>
           <div class="info-row">
             <span class="label">Meetings</span>
-            <span class="value">Wednesdays, 7:00 PM<br>Mason Hall, Room 1210</span>
+            <span class="value">Wednesdays, 7:00 PM<br>Room TBD</span>
           </div>
           <div class="info-row">
             <span class="label">Mailing list</span>
             <span class="value"><a href="#">Join the weekly digest →</a></span>
           </div>
-          <div class="info-row">
-            <span class="label">Instagram</span>
-            <span class="value"><a href="#">@michiganea</a></span>
-          </div>
-          <div class="info-row">
-            <span class="label">Discord</span>
-            <span class="value"><a href="#">Join the server →</a></span>
-          </div>
-          <div class="info-row">
+                    <div class="info-row">
             <span class="label">Location</span>
             <span class="value">University of Michigan<br>Ann Arbor, MI</span>
           </div>
         </div>
       </div>
 
-      <div>
-        <span class="eyebrow">Message us</span>
-        <h2 style="margin-top:14px;">Send a note</h2>
-        <form style="margin-top:26px;" onsubmit="event.preventDefault(); this.querySelector('.form-note').textContent='Thanks — we\'ll get back to you within a few days.';">
-          <div class="field">
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" required>
-          </div>
-          <div class="field">
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" required>
-          </div>
-          <div class="field">
-            <label for="message">Message</label>
-            <textarea id="message" name="message" required placeholder="What's on your mind?"></textarea>
-          </div>
-          <button type="submit" class="btn btn-primary">Send message</button>
-          <p class="form-note">We read every message and reply within a few days.</p>
-        </form>
-      </div>
-    </div>
+<form action="https://formspree.io/f/xoeqqaav method="POST" style="margin-top:26px;">
+  <div class="field">
+    <label for="name">Name</label>
+    <input type="text" id="name" name="name" required>
   </div>
+  <div class="field">
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" required>
+  </div>
+  <div class="field">
+    <label for="message">Message</label>
+    <textarea id="message" name="message" required placeholder="What's on your mind?"></textarea>
+  </div>
+  <button type="submit" class="btn btn-primary">Send message</button>
+  <p class="form-note">We read every message and reply within a few days.</p>
+</form>
 </section>
 
 <footer>
@@ -124,3 +110,5 @@
 <script src="script.js"></script>
 </body>
 </html>
+
+
