@@ -1,102 +1,85 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head> <link rel="icon" type="image/png" href="/favicon_ea.png" />
-<meta charset="UTF-8">
+<head>
+<meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Contact — EA Michigan</title>
-<meta name="description" content="Get in touch with EA Michigan, or apply to the Intro Fellowship.">
+<title>Get involved — Michigan EA</title>
+<meta name="description" content="Contact Michigan EA, get meeting details, or express interest in our fellowship.">
+<meta name="theme-color" content="#00274c">
+<link rel="icon" href="favicon_ea.png">
 <link rel="stylesheet" href="styles.css">
+<script src="script.js" defer>
+</script>
 </head>
 <body>
-
-<header class="site-header">
-  <nav class="wrap nav">
-    <a href="index.html" class="brand"><span class="mark"></span>EA MICHIGAN</a>
-    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" id="navToggle"><span></span></button>
-    <ul class="nav-links" id="navLinks">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="events.html">Events</a></li>
-      <li><a href="contact.html" aria-current="page">Contact</a></li>
-    </ul>
-    <a href="contact.html" class="btn btn-outline nav-cta">Get involved</a>
-  </nav>
+<a class="skip" href="#main">Skip to content</a>
+<header class="shell header">
+<a class="brand" href="index.html">
+<img src="favicon_ea.png" alt="" width="42" height="42">
+<span>Michigan <b>EA</b>
+</span>
+</a>
+<button class="menu-toggle" type="button" aria-controls="navigation" aria-expanded="false" hidden>Menu</button>
+<nav id="navigation" aria-label="Main navigation">
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="events.html">Events</a>
+<a href="contact.html" aria-current="page">Get involved</a>
+</nav>
 </header>
-
-<section class="page-hero">
-  <div class="wrap">
-    <span class="eyebrow">Get in touch</span>
-    <h1>Say hello.</h1>
-    <p>Questions about the fellowship, ideas for a speaker, or just curious? Send us a message! </p>
-  </div>
+<main id="main">
+<section class="shell page-intro">
+<p class="eyebrow">Get involved</p>
+<h1>Come say hello.</h1>
+<p class="intro-copy">New to EA? Curious about a meeting? Looking for people to think through an idea with? You’re in the right place.</p>
 </section>
-
-<section>
-  <div class="wrap">
-    <div class="contact-grid">
-      <div>
-        <span class="eyebrow">Details</span>
-        <h2 style="margin-top:14px;">Find us</h2>
-        <div style="margin-top:26px;">
-          <div class="info-row">
-            <span class="label">Email</span>
-            <span class="value"><a href="mailto:effectivealtruism@umich.edu">effectivealtruism@umich.edu</a></span>
-          </div>
-          <div class="info-row">
-            <span class="label">Meetings</span>
-            <span class="value">Wednesdays, 7:00 PM<br>Room TBD</span>
-          </div>
-          
-<form action="https://formspree.io/f/xoeqqaav" method="POST" style="margin-top:26px;">
-  <div class="field">
-    <label for="name">Name</label>
-    <input type="text" id="name" name="name" required>
-  </div>
-  <div class="field">
-    <label for="email">Email</label>
-    <input type="email" id="email" name="email" required>
-  </div>
-  <div class="field">
-    <label for="message">Message</label>
-    <textarea id="message" name="message" required placeholder="What's on your mind?"></textarea>
-  </div>
-  <button type="submit" class="btn btn-primary">Send message</button>
-  <p class="form-note">We read every message and reply within a few days.</p>
+<section class="shell contact-layout">
+<div class="contact-details">
+<h2>Let’s talk.</h2>
+<p>Email us directly at<br>
+<a href="mailto:effectivealtruism@umich.edu">effectivealtruism@umich.edu</a>
+</p>
+<dl>
+<dt>Weekly meetings</dt>
+<dd>Wednesdays, 7:00 pm<br>Contact us for the current room.</dd>
+<dt>Intro fellowship</dt>
+<dd>
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSfK81MyzP4-b2OcQkwoCRocKhrPAt3SMrWoy838ELAUsbyKNA/viewform?usp=publish-editor">Fill out the interest form <span aria-hidden="true">↗</span>
+</a>
+</dd>
+</dl>
+<p class="small">To receive meeting updates, include that in your message.</p>
+</div>
+<form action="https://formspree.io/f/xoeqqaav" method="POST">
+<h2>Send a message</h2>
+<div class="field">
+<label for="name">Your name</label>
+<input id="name" name="name" autocomplete="name" required>
+</div>
+<div class="field">
+<label for="email">Email address</label>
+<input id="email" name="email" type="email" autocomplete="email" required>
+</div>
+<div class="field">
+<label for="message">What’s on your mind?</label>
+<textarea id="message" name="message" rows="5" required>
+</textarea>
+</div>
+<button class="button" type="submit">Send message <span aria-hidden="true">↗</span>
+</button>
+<p class="small">Your message goes to the student organizers.</p>
 </form>
 </section>
-
-<footer>
-  <div class="wrap">
-    <div class="footer-grid">
-      <div>
-        <h4>EA Michigan</h4>
-        <p style="max-width:280px;font-size:0.94rem;color:rgba(250,247,239,0.7);">A student-run community at the University of Michigan applying evidence and reason to help us do good.</p>
-      </div>
-      <div>
-        <h4>Site</h4>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="events.html">Events</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4>Elsewhere</h4>
-        <ul>
-          <li><a href="mailto:effectivealtruism@umich.edu">effectivealtruism@umich.edu</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <span>© 2026 EA Michigan · Ann Arbor, MI</span>
-      <span>Not officially affiliated with the University of Michigan.</span>
-    </div>
-  </div>
+</main>
+<footer class="shell footer">
+<div>
+<a class="footer-name" href="index.html">Michigan EA</a>
+<p>Effective altruism at the University of Michigan.<br>A student-run community in Ann Arbor.</p>
+</div>
+<div>
+<a href="mailto:effectivealtruism@umich.edu">effectivealtruism@umich.edu</a>
+<p>© 2026 Michigan EA<br>Not officially affiliated with the University of Michigan.</p>
+</div>
 </footer>
-
-<script src="script.js"></script>
 </body>
 </html>
-
-
